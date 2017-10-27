@@ -14,4 +14,11 @@ class RocketTest < Minitest::Test
     expected = "Bird"
     assert_equal(expected, result)
   end
+
+  def test_colour_change
+    @rocket.name = "brown"
+    result = @rocket.name
+    expected = "brown"
+    assert_equal(expected, result)
+  end
 end
