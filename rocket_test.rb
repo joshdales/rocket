@@ -48,4 +48,11 @@ class RocketTest < Minitest::Test
     expected = "Rocket #{@rocket.name} is ready for lift off!"
     assert_equal(expected, result)
   end
+
+  def test_rocket_is_in_the_air
+    @rocket.lift_off
+    result = @rocket.status
+    expected = "Rocket #{@rocket.name} is flying through the sky!"
+    assert_equal(expected, result)
+  end
 end
